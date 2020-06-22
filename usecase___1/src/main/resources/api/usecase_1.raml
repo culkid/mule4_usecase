@@ -1,0 +1,20 @@
+#%RAML 1.0
+title: usecase_1
+
+/personal: 
+  get: 
+    description: this fetches the personal details of a person
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: |
+              [
+                {
+                  "customerID":"100",
+                  "Name":"Sanju",
+                  "Gender":"Male",
+                  "Phone":"12345",
+                  "Email":"test@gmail.com"
+                }
+              ]

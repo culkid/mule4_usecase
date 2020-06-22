@@ -1,0 +1,19 @@
+#%RAML 0.8
+title: 1c-case
+version: 1.0
+
+/social:
+  get: 
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: |
+              [
+                {
+                  "Phone":"12345",
+                  "Email":"abc@gmail.com",
+                  "PAN":"34SD34ER",
+                  "Aadhar":"4578-4578-4578"
+                }
+              ]

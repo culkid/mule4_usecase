@@ -1,0 +1,20 @@
+#%RAML 0.8
+title: q-1b
+version: 1.0
+
+/account:
+  get: 
+     
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: |
+              [
+                {
+                  "Phone":"12345",
+                  "Account_Number":"122222222",
+                  "Balance":"100000.00",
+                  "Provider":"HDFC Bank"
+                }
+              ]

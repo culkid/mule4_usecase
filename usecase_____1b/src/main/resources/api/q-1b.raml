@@ -1,0 +1,36 @@
+#%RAML 1.0
+title: q-1b
+version: 1.0
+
+/account:
+  get:  
+    queryParameters:
+      Phone:
+        type: string
+        required: true
+     
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: |
+              [
+                {
+                  "Phone":"12345",
+                  "Account_Number":"122222222",
+                  "Balance":"100000.00",
+                  "Provider":"HDFC Bank"
+                },
+                {
+                  "Phone":"678910",
+                  "Account_Number":"456456456",
+                  "Balance":"155800.00",
+                  "Provider":"SBI Bank"
+                },
+                {
+                  "Phone":"500",
+                  "Account_Number":"85685",
+                  "Balance":"25000.00",
+                  "Provider":"Axis Bank"
+                }
+              ]
